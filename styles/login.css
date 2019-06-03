@@ -1,0 +1,7 @@
+.levo { 
+    float: left;
+}
+.border-warning {
+    border-style: solid;
+    border-width: 30px;
+}
