@@ -9,9 +9,9 @@ function echo_json($statusCode, $data) {
 
 function echo_err($statusCode, $error, $message) {
   echo_json($statusCode, (object)[
-    status => $statusCode,
-    error => $error,
-    error_description => $message
+    "status" => $statusCode,
+    "error" => $error,
+    "error_description" => $message
   ]);
 }
 
@@ -48,9 +48,9 @@ $post_id = $conn->real_escape_string($post_id);
 
 
 // Check if post exists
-$query = $conn->query("SELECT * FROM posts WHERE id='$post_id' LIMIT 1");
+$query = $conn->query("SELECT * FROM posts WHERE PostID='$post_id' LIMIT 1");
 if (!$query) {
-  echo_err(500, "database_query", "Unable to query database");
+  echo_err(500, "database_query", "Unable to query database1");
 }
 
 if ($query->num_rows == 0) {
