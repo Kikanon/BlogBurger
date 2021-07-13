@@ -1,3 +1,3 @@
-# BlogBurger
-Project made with github.com/AudioXD.
-A simple Blog site with database.
+# BlogBurger<br>
+Project made with http://github.com/AudioXD.<br>
+A simple Blog site with database.<br>
